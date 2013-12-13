@@ -23,7 +23,7 @@ module Rapidoc
       @action           = routes_info[:action].to_s
       @action_method    = routes_info[:method].to_s || '-----'
       @urls             = routes_info[:urls]
-      @file             = @resource + '_' + @action
+      @file             = @resource.gsub(/[:]/, ':' => '_') + '_' + @action
       @examples_route   = examples_route
 
       puts " - Generating #{@action} action documentation..." if trace?

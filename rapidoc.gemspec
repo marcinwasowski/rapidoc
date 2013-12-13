@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["rjurado@nosolosoftware.biz"]
   gem.description   = %q{Generates REST API documentation.}
   gem.summary       = %q{Generates REST API documentation.}
-  gem.homepage      = "https://github.com/drinor/rapidoc.git"
+  gem.homepage      = "https://github.com/marcinwasowski/rapidoc.git"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

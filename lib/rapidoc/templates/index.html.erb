@@ -5,11 +5,11 @@
     <title>Rapidoc</title>
     <meta name="description" content="Artículo en GenbetaDev sobre Bootstrap 2.0">
     <meta name="author" content="Rafael Jurado González" >
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/rapidoc.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <script src="assets/js/jquery-1.9.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <link href="/<%=info.doc_assets_path%>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/<%=info.doc_assets_path%>/assets/css/rapidoc.css" rel="stylesheet">
+    <link href="/<%=info.doc_assets_path%>/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <script src="/<%=info.doc_assets_path%>/assets/js/jquery-1.9.0.min.js"></script>
+    <script src="/<%=info.doc_assets_path%>/assets/js/bootstrap.min.js"></script>
     <style>
       body { padding-top: 60px; }
     </style>
@@ -63,8 +63,10 @@
                     </td>
                     <td>
                       <% if action.has_controller_info %>
-                        <a href="actions/<%=resource.name %>_<%= action.action %>.html"><%= action.action %><a>
-                      <% else %>
+                          <a href="/<%=info.doc_assets_path%>/actions/<%=resource.file %>.html">
+                            <%= action.action %>
+                          <a>
+                    <% else %>
                         <%= action.action %>
                       <% end %>
                     </td>

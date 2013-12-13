@@ -1,4 +1,8 @@
-project_name: "Project Name"
-base_url: "http://api.mydomain.com"
-company: "My company"
+project_name: "Project name"
+base_url: "http://localhost:3000"
+company: "Company "
 year: 2013
+doc_route: "public/doc"
+examples_route: "public/examples"
+doc_assets_path: "doc"
+examples_assets_path: "examples"
