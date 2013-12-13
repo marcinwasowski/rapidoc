@@ -63,7 +63,7 @@
                     </td>
                     <td>
                       <% if action.has_controller_info %>
-                          <a href="/<%=info.doc_assets_path%>/actions/<%=resource.file %>.html">
+                          <a href="/<%=info.doc_assets_path%>/actions/<%= action.file %>.html">
                             <%= action.action %>
                           <a>
                     <% else %>
