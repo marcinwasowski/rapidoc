@@ -40,7 +40,7 @@ module Rapidoc
     private
 
     def examples_path
-      Rails.root.join(@examples_route, resource.downcase)
+      Rails.root.join(@examples_route, resource.downcase.gsub(/[:]/, ':' => '_'))
     end
 
     def add_controller_info( controller_info )
